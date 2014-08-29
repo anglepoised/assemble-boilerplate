@@ -1,2 +1,3 @@
 default:
 - 'jsbeautifier'
+- 'jshint'
