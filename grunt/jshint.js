@@ -3,8 +3,14 @@ module.exports = {
     reporter: require('jshint-stylish'),
     jshintrc: '.jshintrc'
   },
-  settings: {
-    src: ['package.json', '.jshintrc', '.jsbeautify']
+  conf: {
+    src: [
+      '.jshintrc',
+      '.jsbeautify',
+    ]
+  },
+  pkg: {
+    src: ['package.json']
   },
   grunt: {
     with_overrides: {
@@ -12,7 +18,10 @@ module.exports = {
         node: true,
       },
       files: {
-        src: ['Gruntfile.js', 'grunt/*.js'],
+        src: [
+          'Gruntfile.js',
+          'grunt/*.js',
+        ],
       }
     }
   }

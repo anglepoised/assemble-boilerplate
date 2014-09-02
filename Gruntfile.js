@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     loadGruntTasks: {
       pattern: ['grunt-*'],
       config: require('./package.json'),
-      scope: 'devDependencies'
+      scope: 'devDependencies',
     }
   });
 };
