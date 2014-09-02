@@ -6,5 +6,11 @@ default:
 - 'connect:dev'
 - 'watch'
 
+ci:
+- 'clean'
+- 'jsbeautifier'
+- 'jshint'
+- 'copy'
+
 ci-test:
 - 'connect:prod'
