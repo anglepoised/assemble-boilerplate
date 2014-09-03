@@ -18,5 +18,14 @@ module.exports = {
       'grunt/*.js',
     ],
     tasks: ['newer:jsbeautifier:grunt', 'newer:jshint:grunt']
+  },
+  css: {
+    files: [
+      '<%= settings.src %>/assets/styls/**/*.styl'
+    ],
+    tasks: [
+      'stylus',
+      'autoprefixer'
+    ]
   }
 };

@@ -3,6 +3,8 @@ default:
 - 'jsbeautifier'
 - 'jshint'
 - 'copy'
+- 'stylus'
+- 'autoprefixer'
 - 'connect:dev'
 - 'watch'
 
