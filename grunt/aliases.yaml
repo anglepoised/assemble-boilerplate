@@ -8,6 +8,9 @@ default:
 - 'connect:dev'
 - 'watch'
 
+production:
+- 'cmq'
+
 ci:
 - 'clean'
 - 'jsbeautifier'
