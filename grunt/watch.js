@@ -3,21 +3,30 @@ module.exports = {
     files: [
       'package.json',
     ],
-    tasks: ['newer:jsbeautifier:pkg', 'newer:jshint:pkg']
+    tasks: [
+      'newer:jsbeautifier:pkg',
+      'newer:jshint:pkg',
+    ]
   },
   conf: {
     files: [
       '.jshintrc',
       '.jsbeautify',
     ],
-    tasks: ['newer:jsbeautifier:conf', 'newer:jshint:conf']
+    tasks: [
+      'newer:jsbeautifier:conf',
+      'newer:jshint:conf',
+    ]
   },
   grunt: {
     files: [
       'Gruntfile.js',
       'grunt/*.js',
     ],
-    tasks: ['newer:jsbeautifier:grunt', 'newer:jshint:grunt']
+    tasks: [
+      'newer:jsbeautifier:grunt',
+      'newer:jshint:grunt',
+    ]
   },
   css: {
     files: [
@@ -25,7 +34,7 @@ module.exports = {
     ],
     tasks: [
       'stylus',
-      'autoprefixer'
+      'autoprefixer',
     ]
   }
 };
