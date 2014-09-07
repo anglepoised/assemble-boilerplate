@@ -1,3 +1,5 @@
+// base
+
 *
   box-sizing: border-box
 
@@ -5,11 +7,11 @@ html
   font-size: 100%
 
 body
-  background: black
-  color: white
+  background: c-black
+  color: c-white
+  font-family: ff-base
   font-size: 1em
   line-height: 1
-  margin: 0
 
 // autoprefixer test
 :fullscreen a {
@@ -17,10 +19,10 @@ body
 }
 
 // cmq test
-@media only screen and (min-width: 35em)
+@media mq-default
   body
-    background: white
+    background: c-white
 
-@media only screen and (min-width: 35em)
+@media mq-default
   body
-    color: black
+    color: c-black
