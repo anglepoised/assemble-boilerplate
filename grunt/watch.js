@@ -43,6 +43,8 @@ module.exports = {
       '<%= settings.src %>/data/*.json'
     ],
     tasks: [
+      'newer:jshint:jsonData',
+      'newer:jsbeautifier:jsonData',
       'assemble:dev'
     ]
   },

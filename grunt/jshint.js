@@ -23,6 +23,9 @@ module.exports = {
           'grunt/*.js',
         ],
       }
-    }
-  }
+    },
+  },
+  jsonData: {
+    src: ['<%= settings.src %>/data/*.json']
+  },
 };

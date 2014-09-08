@@ -8,4 +8,7 @@ module.exports = {
   grunt: {
     src: ['Gruntfile.js', 'grunt/*.js'],
   },
+  jsonData: {
+    src: ['<%= settings.src %>/data/*.json'],
+  },
 };
