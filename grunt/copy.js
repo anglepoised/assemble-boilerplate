@@ -8,14 +8,24 @@ module.exports = {
       'template',
     ]
   },
-  test: {
+  staticFiles: {
     files: [{
-      cwd: '<%= settings.src %>/',
-      dest: '<%= settings.dist %>/',
+      cwd: '<%= settings.src %>',
+      dest: '<%= settings.dist %>',
       expand: true,
       filter: 'isFile',
       src: [
-        'index.html'
+        '**/.*',
+        '**/*.*',
+        '!**/*.hbs',
+        '!data/**/*.*',
+        '!templates/**/*.*',
+        '!assets/images/**/*.*',
+        '!assets/scripts/**/*.*',
+        '!assets/styls/**/*.*',
+      ]
+    }]
+  },
       ]
     }]
   }
