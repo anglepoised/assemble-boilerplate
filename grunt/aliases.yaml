@@ -5,6 +5,7 @@ default:
 - 'copy'
 - 'stylus'
 - 'autoprefixer'
+- 'assemble'
 - 'connect:dev'
 - 'watch'
 

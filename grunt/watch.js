@@ -36,5 +36,14 @@ module.exports = {
       'stylus',
       'autoprefixer',
     ]
-  }
+  },
+  assemble: {
+    files: [
+      '<%= settings.src %>/**/*.hbs',
+      '<%= settings.src %>/data/*.json'
+    ],
+    tasks: [
+      'assemble:dev'
+    ]
+  },
 };
