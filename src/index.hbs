@@ -3,4 +3,13 @@ title: "Index"
 description: ""
 ---
 
-<p>hello, world!</p>
+<em>A JSON content example</em>
+
+{{#if content.links}}
+<ul >
+{{#each content.links}}
+    <li><a href="{{ this.url }}">{{ this.name }}</a></li>
+{{/each}}
+</ul>
+{{/if}}
+

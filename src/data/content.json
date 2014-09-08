@@ -1,0 +1,12 @@
+{
+  "links": [{
+    "url": "http://example.com/",
+    "name": "Example.com"
+  }, {
+    "url": "http://example.net/",
+    "name": "Example.net"
+  }, {
+    "url": "http://example.org/",
+    "name": "Example.org"
+  }]
+}
