@@ -46,4 +46,15 @@ module.exports = {
       'assemble:dev'
     ]
   },
+  dist: {
+    options: {
+      livereload: true,
+    },
+    files: [
+      '<%= settings.dist %>/*.html',
+      '<%= settings.dist %>/assets/images/*.{png,jpg,jpeg,gif,webp,svg}',
+      '<%= settings.dist %>/assets/scripts/*.js',
+      '<%= settings.dist %>/assets/styles/*.css'
+    ]
+  },
 };
