@@ -40,7 +40,8 @@ module.exports = {
   assemble: {
     files: [
       '<%= settings.src %>/**/*.hbs',
-      '<%= settings.src %>/data/*.json'
+      '<%= settings.src %>/data/*.json',
+      '<%= settings.src %>/content/*.md',
     ],
     tasks: [
       'newer:jshint:jsonData',

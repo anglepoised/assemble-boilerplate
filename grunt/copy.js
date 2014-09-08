@@ -19,6 +19,7 @@ module.exports = {
         '**/*.*',
         '!**/*.hbs',
         '!data/**/*.*',
+        '!content/**/*.*',
         '!templates/**/*.*',
         '!assets/images/**/*.*',
         '!assets/scripts/**/*.*',
