@@ -12,6 +12,7 @@ default:
 production:
 - 'cmq'
 - 'groundskeeper'
+- 'modernizr'
 
 ci:
 - 'clean'
