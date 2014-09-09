@@ -27,7 +27,16 @@ module.exports = {
       ]
     }]
   },
+  scripts: {
+    files: [{
+      cwd: '<%= settings.src %>/assets/scripts/',
+      dest: '<%= settings.dist %>/assets/scripts/',
+      expand: true,
+      filter: 'isFile',
+      src: [
+        '**/*.js',
+        '!**/modernizr**',
       ]
     }]
-  }
+  },
 };
