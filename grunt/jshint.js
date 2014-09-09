@@ -1,11 +1,27 @@
 module.exports = {
   options: {
     reporter: require('jshint-stylish'),
-    jshintrc: '.jshintrc'
+    bitwise: true,
+    camelcase: true,
+    curly: true,
+    eqeqeq: true,
+    indent: 2,
+    latedef: true,
+    newcap: true,
+    noarg: true,
+    nonbsp: true,
+    quotmark: true,
+    undef: true,
+    unused: true,
+    strict: false,
+    eqnull: true,
+    esnext: true,
+    immed: true,
+    trailing: true,
+    smarttabs: true,
   },
   conf: {
     src: [
-      '.jshintrc',
       '.jsbeautify',
     ]
   },
@@ -13,16 +29,14 @@ module.exports = {
     src: ['package.json']
   },
   grunt: {
-    with_overrides: {
-      options: {
-        node: true,
-      },
-      files: {
-        src: [
-          'Gruntfile.js',
-          'grunt/*.js',
-        ],
-      }
+    options: {
+      node: true,
+    },
+    files: {
+      src: [
+        'Gruntfile.js',
+        'grunt/*.js',
+      ],
     },
   },
   jsonData: {

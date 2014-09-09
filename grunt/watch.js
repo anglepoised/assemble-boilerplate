@@ -10,7 +10,6 @@ module.exports = {
   },
   conf: {
     files: [
-      '.jshintrc',
       '.jsbeautify',
     ],
     tasks: [
