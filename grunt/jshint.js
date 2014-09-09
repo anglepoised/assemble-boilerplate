@@ -42,4 +42,14 @@ module.exports = {
   jsonData: {
     src: ['<%= settings.src %>/data/*.json']
   },
+  scripts: {
+    options: {
+      jquery: true,
+      browser: true,
+      devel: true,
+    },
+    files: {
+      src: ['<%= settings.src %>/assets/scripts/*.js'],
+    },
+  },
 };

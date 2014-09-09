@@ -11,4 +11,7 @@ module.exports = {
   jsonData: {
     src: ['<%= settings.src %>/data/*.json'],
   },
+  scripts: {
+    src: ['<%= settings.src %>/assets/scripts/*.js'],
+  },
 };

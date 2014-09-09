@@ -36,6 +36,15 @@ module.exports = {
       'autoprefixer',
     ]
   },
+  scripts: {
+    files: [
+      '<%= settings.src %>/assets/scripts/*.js'
+    ],
+    tasks: [
+      'newer:jsbeautifier:scripts',
+      'newer:jshint:scripts',
+    ]
+  },
   assemble: {
     files: [
       '<%= settings.src %>/**/*.hbs',
