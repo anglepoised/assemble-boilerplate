@@ -37,3 +37,4 @@ optimize:
 - 'cmq'
 - 'groundskeeper'
 - 'modernizr'
+- 'uglify'
