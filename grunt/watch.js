@@ -36,6 +36,15 @@ module.exports = {
       'autoprefixer',
     ]
   },
+  images: {
+    files: [
+      '<%= settings.src %>/assets/images/**/*.{jpg,png,svg}'
+    ],
+    tasks: [
+      'newer:imagemin',
+      'newer:copy:images'
+    ]
+  },
   scripts: {
     files: [
       '<%= settings.src %>/assets/scripts/*.js'
@@ -63,7 +72,7 @@ module.exports = {
     },
     files: [
       '<%= settings.dist %>/*.html',
-      '<%= settings.dist %>/assets/images/*.{png,jpg,jpeg,gif,webp,svg}',
+      '<%= settings.dist %>/assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
       '<%= settings.dist %>/assets/scripts/*.js',
       '<%= settings.dist %>/assets/styles/*.css'
     ]

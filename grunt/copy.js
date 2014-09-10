@@ -38,4 +38,13 @@ module.exports = {
       ]
     }]
   },
+  images: {
+    files: [{
+      cwd: '<%= settings.src %>/assets/images/',
+      dest: '<%= settings.dist %>/assets/images/',
+      expand: true,
+      filter: 'isFile',
+      src: ['**/*.{png,jpg,svg}']
+    }]
+  },
 };

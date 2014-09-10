@@ -25,6 +25,7 @@ ci:
 prep:
 - 'jsbeautifier'
 - 'jshint'
+- 'imagemin'
 - 'clean'
 - 'copy'
 - 'stylus'
