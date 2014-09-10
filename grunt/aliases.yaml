@@ -1,24 +1,36 @@
+# primary tasks
 default:
-- 'clean'
-- 'jsbeautifier'
-- 'jshint'
-- 'copy'
-- 'stylus'
-- 'autoprefixer'
-- 'assemble'
+- 'dev'
+
+dev:
+- 'prep'
+- 'assemble:dev'
 - 'connect:dev'
 - 'watch'
 
-production:
+prod:
+- 'prep'
+- 'assemble:prod'
+- 'optimize'
+- 'connect:prod'
+- 'watch'
+
+ci:
+- 'prep'
+- 'assemble:prod'
+- 'optimize'
+- 'connect:prod'
+
+# task groups
+prep:
+- 'jsbeautifier'
+- 'jshint'
+- 'clean'
+- 'copy'
+- 'stylus'
+- 'autoprefixer'
+
+optimize:
 - 'cmq'
 - 'groundskeeper'
 - 'modernizr'
-
-ci:
-- 'clean'
-- 'jsbeautifier'
-- 'jshint'
-- 'copy'
-
-ci-test:
-- 'connect:prod'
