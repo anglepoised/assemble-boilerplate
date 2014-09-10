@@ -35,7 +35,6 @@ module.exports = {
       filter: 'isFile',
       src: [
         '**/*.js',
-        '!**/modernizr**',
       ]
     }]
   },

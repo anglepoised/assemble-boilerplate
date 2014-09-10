@@ -24,8 +24,8 @@ module.exports = {
     parseFiles: true,
     files: {
       src: [
-        '*.js',
-        '*.css',
+        '<%= settings.src %>/**/*.js',
+        '<%= settings.src %>/**/*.styl',
       ]
     },
     matchCommunityTests: false,
