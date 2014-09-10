@@ -25,12 +25,16 @@ ci:
 prep:
 - 'jsbeautifier'
 - 'jshint'
+- 'imagemin'
 - 'clean'
 - 'copy'
 - 'stylus'
 - 'autoprefixer'
 
 optimize:
+- 'htmlmin'
+- 'cssmin'
 - 'cmq'
 - 'groundskeeper'
 - 'modernizr'
+- 'uglify'
