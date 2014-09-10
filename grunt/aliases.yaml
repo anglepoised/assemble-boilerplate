@@ -21,6 +21,7 @@ ci:
 - 'optimize'
 - 'connect:prod'
 - 'link-checker:prod'
+- 'htmllint'
 
 # task groups
 prep:
