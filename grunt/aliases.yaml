@@ -20,6 +20,7 @@ ci:
 - 'assemble:prod'
 - 'optimize'
 - 'connect:prod'
+- 'link-checker:prod'
 
 # task groups
 prep:
