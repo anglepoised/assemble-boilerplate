@@ -20,6 +20,8 @@ ci:
 - 'assemble:prod'
 - 'optimize'
 - 'connect:prod'
+- 'link-checker:prod'
+- 'htmllint'
 
 # task groups
 prep:
