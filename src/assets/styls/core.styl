@@ -1,11 +1,62 @@
-// core: combines everything else
-@import "functions"
-@import "variables"
-@import "normalize"
-@import "base"
-@import "layout"
-@import "helpers"
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ * Colours..............Manage colour palette.
+ * Fonts................Collect fonts.
+ * Responsive...........Define breakpoints etc.
+ *
+ * TOOLS
+ * Functions............Handy functions.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Reset................A pared-back reset to remove margins
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Page.................Page defaults.
+ * Headings.............H1-H6.
+ * Type.................Type defaults.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ * Boxes................Box elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ * Hide.................Hiding helpers.
+ */
 
-@import "modules/module-a"
+@import "settings.global"
+@import "settings.colours"
+@import "settings.fonts"
+@import "settings.responsive"
+
+@import "tools.functions"
+
+@import "generic.normalize"
+@import "generic.reset"
+@import "generic.box-sizing"
+
+@import "base.page"
+@import "base.headings"
+@import "base.type"
+
+@import "objects.wrappers"
+
+@import "components.page-head"
+@import "components.page-foot"
+@import "components.buttons"
+@import "components.boxes"
+
+@import "trumps.text"
+@import "trumps.hide"
 
 @import "print"
