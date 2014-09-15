@@ -4,7 +4,7 @@ module.exports = {
       cwd: '<%= settings.src %>/assets/images',
       dest: '<%= settings.src %>/assets/images',
       expand: true,
-      src: '**/*.{png,jpg,svg}'
+      src: '**/*.{png,jpg}'
     }]
   }
 };
