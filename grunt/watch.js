@@ -42,6 +42,7 @@ module.exports = {
     ],
     tasks: [
       'newer:imagemin',
+      'newer:svgmin',
       'newer:copy:images',
       'grunticon',
     ]

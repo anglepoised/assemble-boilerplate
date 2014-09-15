@@ -28,6 +28,7 @@ prep:
 - 'jsbeautifier'
 - 'jshint'
 - 'imagemin'
+- 'svgmin'
 - 'clean'
 - 'copy'
 - 'stylus'
