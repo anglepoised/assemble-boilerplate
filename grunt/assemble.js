@@ -12,15 +12,27 @@ module.exports = {
       dev: true,
       prod: false
     },
-    src: ['<%= settings.src %>/*.hbs'],
-    dest: '<%= settings.dist %>/'
+    expand: true,
+    cwd: '<%= settings.src %>',
+    src: [
+      '**/*.hbs',
+      '!templates/**/*.{hbs,md}',
+    ],
+    dest: '<%= settings.dist %>/',
+    ext: '.html'
   },
   prod: {
     options: {
       dev: false,
       prod: true
     },
-    src: ['<%= settings.src %>/*.hbs'],
-    dest: '<%= settings.dist %>/'
+    expand: true,
+    cwd: '<%= settings.src %>',
+    src: [
+      '**/*.hbs',
+      '!templates/**/*.{hbs,md}',
+    ],
+    dest: '<%= settings.dist %>/',
+    ext: '.html'
   }
 };
