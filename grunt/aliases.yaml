@@ -42,3 +42,4 @@ optimize:
 - 'groundskeeper'
 - 'modernizr'
 - 'uglify'
+- 'cacheBust'
