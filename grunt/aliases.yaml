@@ -37,8 +37,8 @@ prep:
 
 optimize:
 - 'htmlmin'
-- 'cssmin'
 - 'cmq'
+- 'cssmin'
 - 'groundskeeper'
 - 'modernizr'
 - 'uglify'
