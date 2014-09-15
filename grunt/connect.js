@@ -5,7 +5,7 @@ module.exports = {
   dev: {
     options: {
       livereload: true,
-      port: 9000
+      port: 3000
     }
   },
   prod: {
