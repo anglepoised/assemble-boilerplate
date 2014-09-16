@@ -5,7 +5,7 @@ default:
 dev:
 - 'prep'
 - 'assemble:dev'
-- 'connect:dev'
+- 'browserSync'
 - 'watch'
 
 prod:
