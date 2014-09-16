@@ -4,7 +4,7 @@ module.exports = {
   },
   prod: {
     files: {
-      '<%= settings.dist %>/assets/styles/core.css': '<%= settings.dist %>/assets/styles/core.css'
+      '<%= settings.dist %>/assets/styles/main.css': '<%= settings.dist %>/assets/styles/main.css'
     }
   }
 };
