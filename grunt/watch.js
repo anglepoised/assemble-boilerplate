@@ -69,9 +69,6 @@ module.exports = {
     ]
   },
   dist: {
-    options: {
-      livereload: true,
-    },
     files: [
       '<%= settings.dist %>/*.html',
       '<%= settings.dist %>/assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
