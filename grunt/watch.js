@@ -34,6 +34,7 @@ module.exports = {
     tasks: [
       'stylus',
       'autoprefixer',
+      'colorguard',
     ]
   },
   images: {

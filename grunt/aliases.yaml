@@ -22,6 +22,7 @@ ci:
 - 'connect:prod'
 - 'link-checker:prod'
 - 'htmllint'
+- 'colorguard'
 
 # task groups
 prep:
