@@ -23,6 +23,7 @@ ci:
 - 'link-checker:prod'
 - 'htmllint'
 - 'colorguard'
+- 'stylestats'
 
 # task groups
 prep:
