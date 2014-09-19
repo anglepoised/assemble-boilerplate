@@ -53,8 +53,9 @@ module.exports = {
       '<%= settings.src %>/assets/scripts/*.js'
     ],
     tasks: [
-      'newer:jsbeautifier:scripts',
       'newer:jshint:scripts',
+      'newer:jsbeautifier:scripts',
+      'newer:jscs:scripts',
     ]
   },
   assemble: {
