@@ -13,7 +13,6 @@ module.exports = {
       expand: true,
       filter: 'isFile',
       src: [
-        '**/.*',
         '**/*.*',
         '!**/*.hbs',
         '!data/**/*.*',
