@@ -27,8 +27,9 @@ ci:
 
 # task groups
 prep:
-- 'jsbeautifier'
 - 'jshint'
+- 'jsbeautifier'
+- 'jscs'
 - 'imagemin'
 - 'svgmin'
 - 'clean'

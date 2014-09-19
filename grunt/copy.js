@@ -4,8 +4,6 @@ module.exports = {
       '.DS_Store',
       '.gitignore',
       'node_modules',
-      'data/*.json',
-      'template',
     ]
   },
   staticFiles: {
@@ -15,7 +13,6 @@ module.exports = {
       expand: true,
       filter: 'isFile',
       src: [
-        '**/.*',
         '**/*.*',
         '!**/*.hbs',
         '!data/**/*.*',
