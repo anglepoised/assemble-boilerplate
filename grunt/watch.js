@@ -56,6 +56,7 @@ module.exports = {
       'newer:jshint:scripts',
       'newer:jsbeautifier:scripts',
       'newer:jscs:scripts',
+      'newer:copy:scripts',
     ]
   },
   assemble: {
