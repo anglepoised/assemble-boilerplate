@@ -10,7 +10,7 @@ module.exports = {
   dev: {
     site: '0.0.0.0',
     options: {
-      initialPort: 9000,
+      initialPort: 3000,
     }
   },
   prod: {
