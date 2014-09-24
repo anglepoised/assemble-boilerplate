@@ -31,7 +31,6 @@ prep:
 - 'jsbeautifier'
 - 'jscs'
 - 'imagemin'
-- 'svgmin'
 - 'clean'
 - 'copy'
 - 'stylus'
@@ -40,6 +39,7 @@ prep:
 
 optimize:
 - 'htmlmin'
+- 'svgmin'
 - 'cmq'
 - 'cssmin'
 - 'groundskeeper'
