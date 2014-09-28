@@ -31,7 +31,6 @@
     "grunt-html": "^1.4.0",
     "grunt-jsbeautifier": "^0.2.7",
     "grunt-jscs": "^0.7.1",
-    "grunt-link-checker": "0.0.6",
     "grunt-modernizr": "^0.5.2",
     "grunt-newer": "^0.7.0",
     "grunt-stylestats": "^0.1.3",
