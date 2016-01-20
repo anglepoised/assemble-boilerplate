@@ -1,0 +1,39 @@
+///*------------------------------------*\
+//    #FUNCTIONS
+//\*------------------------------------*/
+
+
+// em2px and px2em: http://git.io/cJlw7A
+em2px(a, base = null)
+  fontsize = base ? base : (basefontsize is defined ? basefontsize : 1);
+  if unit(fontsize) == '%'
+    fontsize = fontsize / 100;
+  unit(a * 16 * fontsize, px);
+
+px2em(a, base = null)
+  fontsize = base ? base : (basefontsize is defined ? basefontsize : 1);
+  if unit(fontsize) == '%'
+    fontsize = fontsize / 100;
+  unit((a / 16 / fontsize), em);
+
+
+// Clearfix
+cf()
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+
+// Image replacement
+ir()
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &:before
+    content: ""
+    display: block
+    width: 0
+    height: 150%

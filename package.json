@@ -1,19 +1,41 @@
 {
   "name": "assemble-boilerplate",
   "description": "Boilerplate for Assemble builds",
-  "author": "Bear & Rocket",
-  "version": "0.1.0",
+  "author": "Paul Love",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/bearandrocket/assemble-boilerplate.git"
+    "url": "https://github.com/ohskylab/assemble-boilerplate.git"
   },
   "devDependencies": {
+    "assemble": "^0.4.42",
     "grunt": "^0.4.5",
-    "grunt-contrib-copy": "^0.5.0",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-browser-sync": "^1.5.3",
+    "grunt-cache-bust": "^0.4.4",
+    "grunt-colorguard": "^0.1.3",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.8.1",
     "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-groundskeeper": "^0.1.10",
+    "grunt-grunticon": "^1.2.13",
+    "grunt-html": "^1.4.0",
     "grunt-jsbeautifier": "^0.2.7",
-    "jshint-stylish": "^0.4.0",
-    "load-grunt-config": "^0.13.1"
+    "grunt-jscs": "^0.7.1",
+    "grunt-modernizr": "^0.6.0",
+    "grunt-newer": "^0.7.0",
+    "grunt-stylestats": "^0.1.3",
+    "grunt-svgmin": "^1.0.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-config": "^0.13.2"
   }
 }

@@ -9,9 +9,12 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json')
     },
     loadGruntTasks: {
-      pattern: ['grunt-*'],
+      pattern: [
+        'grunt-*',
+        'assemble'
+      ],
       config: require('./package.json'),
-      scope: 'devDependencies'
+      scope: 'devDependencies',
     }
   });
 };

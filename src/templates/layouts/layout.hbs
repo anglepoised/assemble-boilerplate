@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="{{ site.lang }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }}</title>
+        <meta name="description" content="{{ description }}">
+
+        <!-- see http://git.io/Cyqm4A -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{ assets }}/styles/main.css">
+        <script src="{{ assets }}/scripts/lib/modernizr.js"></script>
+    </head>
+    <body>
+        {{> page-head }}
+
+        {{> body }}
+
+        {{> page-foot }}
+
+        <script src="{{ assets }}/scripts/lib/jquery.js"></script>
+        <script src="{{ assets }}/scripts/main.js"></script>
+
+    </body>
+</html>

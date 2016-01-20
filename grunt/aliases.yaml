@@ -1,4 +1,47 @@
+# primary tasks
 default:
-- 'jsbeautifier'
+- 'dev'
+
+dev:
+- 'prep'
+- 'assemble:dev'
+- 'browserSync'
+- 'watch'
+
+prod:
+- 'prep'
+- 'assemble:prod'
+- 'optimize'
+- 'connect:prod'
+- 'watch'
+
+ci:
+- 'prep'
+- 'assemble:prod'
+- 'optimize'
+- 'connect:prod'
+- 'htmllint'
+- 'colorguard'
+- 'stylestats'
+
+# task groups
+prep:
 - 'jshint'
+- 'jsbeautifier'
+- 'jscs'
+- 'imagemin'
+- 'clean'
 - 'copy'
+- 'stylus'
+- 'autoprefixer'
+- 'grunticon'
+
+optimize:
+- 'htmlmin'
+- 'svgmin'
+- 'cmq'
+- 'cssmin'
+- 'groundskeeper'
+- 'modernizr'
+- 'uglify'
+- 'cacheBust'
