@@ -12,7 +12,7 @@ Borrows heavily from a Grunt workflow put together by [Richard Hallows](http://r
 * Clone repository
 * Install dependencies:
 
-        npm i
+        npm install
 
 ## Development
 
