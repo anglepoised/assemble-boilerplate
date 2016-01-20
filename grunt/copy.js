@@ -1,19 +1,14 @@
 module.exports = {
-  options: {
-    noProcess: [
-      '.DS_Store',
-      '.gitignore',
-      'node_modules',
-    ]
-  },
   staticFiles: {
     files: [{
       cwd: '<%= settings.src %>',
       dest: '<%= settings.dist %>',
       expand: true,
       filter: 'isFile',
+      dot: true,
       src: [
-        '**/*.*',
+        '**/**',
+        '!**/*.DS_Store',
         '!**/*.hbs',
         '!data/**/*.*',
         '!content/**/*.*',
@@ -32,6 +27,7 @@ module.exports = {
       filter: 'isFile',
       src: [
         '**/*.js',
+        '**/*.map',
       ]
     }]
   },
