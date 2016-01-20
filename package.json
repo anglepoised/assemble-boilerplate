@@ -1,12 +1,12 @@
 {
   "name": "assemble-boilerplate",
   "description": "Boilerplate for Assemble builds",
-  "author": "Bear & Rocket",
-  "version": "0.1.0",
+  "author": "Paul Love",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/bearandrocket/assemble-boilerplate.git"
+    "url": "https://github.com/ohskylab/assemble-boilerplate.git"
   },
   "devDependencies": {
     "assemble": "^0.4.42",
